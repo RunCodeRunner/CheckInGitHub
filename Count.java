@@ -1,19 +1,19 @@
 import java.io.*;
-import java.util.*;
+
 public class Count {
 
 public int counter(String str) {
+	if(str == null) return -1;
 int j = 0;
 char[] chr = str.toCharArray();
 for(char c : chr) {
 	j++;
-	System.out.println(j);
 	}
 return j;
     }
 
 public static void main(String[] args) {
 	Count c = new Count();
-	c.counter("Hello");
+	System.out.println(c.counter("Hello World"));
 }
 }
